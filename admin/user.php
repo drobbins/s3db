@@ -1,4 +1,5 @@
 <?php
+include_once 'constants.php';
 	#user.php is a list of users for the administrators. Includes links for edit, delete, view and proxy users created by a specific admin.
 	#Helena F Deus (helenadeus@gmail.com)
 

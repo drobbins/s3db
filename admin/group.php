@@ -1,4 +1,5 @@
 <?php
+include_once 'constants.php';
 	#group.php list all groups that the admin user can edit (those where he belongs and those that he created. Only general admin can see all groups at once.)
 	#Helena F Deus (helenadeus@gmail.com)
 	include('adminheader.php');

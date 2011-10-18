@@ -1,24 +1,25 @@
 <?php
+include_once 'constants.php';
 ini_set('display_errors',0);
-	if($_REQUEST['su3d'])
-	ini_set('display_errors',1);
+    if($_REQUEST['su3d'])
+    ini_set('display_errors',1);
 $possible_args = array('id', 'key', 'project_id', 'user_id', 'group_id', 'class_id', 'instance_id', 'collection_id', 'item_id', 'rule_id', 'statement_id', 'literal_verb', 'literal_object', 'class_object', 'item_verb', 'action', 'su3d');
 
 
 foreach ($possible_args as $new_arg) {#fo all possible arguments, chose the ones that are not empty
-	if ($_REQUEST[$new_arg]!='') {
-		
-		if($moreargs=='')
-			$moreargs .='?';
-		else 
-			$moreargs .='&';
-		
-		
-		$moreargs .= $new_arg.'='.$_REQUEST[$new_arg];
-		
-		
-		
-	}
+    if ($_REQUEST[$new_arg]!='') {
+
+        if($moreargs=='')
+            $moreargs .='?';
+        else
+            $moreargs .='&';
+
+
+        $moreargs .= $new_arg.'='.$_REQUEST[$new_arg];
+
+
+
+    }
 }
 
 #$args.= $moreargs;
